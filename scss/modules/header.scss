@@ -1,0 +1,14 @@
+.l-header {
+  background-color: $pj_gray;
+  height: 169px;
+  @include flexbox;
+  @include hover-focus{
+    cursor: pointer;
+  }
+
+  @media #{$max-xs} {
+    background-color: red;
+  }
+
+
+}
