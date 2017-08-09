@@ -9347,6 +9347,16 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   }
 }
 
+.l-content {
+  padding: 0 415px;
+}
+
+@media screen and (max-width: 320px) {
+  .l-content {
+    padding: 0;
+  }
+}
+
 .index {
   background-color: red;
 }

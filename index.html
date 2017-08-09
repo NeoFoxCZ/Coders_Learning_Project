@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
 
 <head>
+    <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
+
+  <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+  <script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script>
+  <script language="JavaScript" type="text/javascript" src="/js/sprinkle.js"></script>
+
+
     <meta charset="UTF-8">
     <title>Koderina tvrda drina</title>
+<!-- TODO: Rozlišování stránky -->
 </head>
 
 <body>
-
-</body>
+<!-- Section [HEAD-MENU] -->
 <div class="l-header">
   myslíme na vás, kudy chodíme...
 
@@ -44,4 +50,65 @@
   </div>
 
 </div>
+<!-- end section -->
+
+  <div class="l-content">
+
+    <!-- Section [SIDE-MENU] -->
+    <div id="navmenu">
+    <ul>
+      <li class="c-menu_dropdown"><a href="#">Dámské spodní prádlo</a>
+        <ul>
+          <li><a href="#">podkategorie</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Erotické prádlo</a></li>
+        <ul>
+            <li><a href="#">podkategorie</a></li>
+          </ul>
+      <li><a href="#">Pánské spodní prádlo</a></li>
+        <ul>
+            <li><a href="#">Župany a pyžama</a></li>
+            <ul>
+              <li><a href="#">moderní</a></li>
+              <li><a href="#">stará</a></li>
+            </ul>
+          </ul>
+      <li><a href="#">Prádlo pro děti</a></li>
+      <ul>
+          <li><a href="#">podkategorie</a></li>
+        </ul>
+    </ul>
+    </div>
+
+    <style>
+      .c-menu_dropdown ul {
+        display : none;
+      }
+    </style>
+
+      <script type="text/javascript">
+        $('.c-menu_dropdown').click(function() {
+          $(this).children('ul').toggle();
+        });
+      </script>
+
+    <!-- end section-->
+
+    <!-- Section [INDEX-SLIDER] -->
+
+    <!-- end section-->
+
+    <!-- Section [REFERENCES] -->
+
+    <!-- end section-->
+
+    <!-- Section [CONTENT] -->
+
+    <!-- end section-->
+  </div>
+</body>
+
+
+
 </html>
