@@ -9341,6 +9341,12 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   cursor: pointer;
 }
 
+@media screen and (max-width: 320px) {
+  .l-header {
+    background-color: red;
+  }
+}
+
 .index {
   background-color: red;
 }
