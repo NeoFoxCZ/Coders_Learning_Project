@@ -5,55 +5,121 @@
 <head>
     <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
 
-  <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
-  <script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script>
-  <script language="JavaScript" type="text/javascript" src="/js/sprinkle.js"></script>
+  <script language="JavaScript" type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 
 
     <meta charset="UTF-8">
     <title>Koderina tvrda drina</title>
-<!-- TODO: Rozlišování stránky -->
+
 </head>
 
 <body>
 <!-- Section [HEAD-MENU] -->
-<div class="l-header">
-  myslíme na vás, kudy chodíme...
+<div class="l-header l-content">
+  <div style="display:flex; flex-direction: column; width: 100%;">
+  <div class="row" style="padding-bottom: 20px;">
+    myslíme na vás, kudy chodíme...
 
-  <div>
-    <a>Home</a>
-    <a>Aktuality</a>
-    <a>Vše o nákupu</a>
-    <a>Doprava</a>
-    <a>Kontakty</a>
+    <div>
+      <a>Home</a>
+      <a>Aktuality</a>
+      <a>Vše o nákupu</a>
+      <a>Doprava</a>
+      <a>Kontakty</a>
+    </div>
+
+    <div>
+      <a>Registrace</a>
+      <a>Přihlášení</a>
+    </div>
+
+
+
   </div>
 
-  <div>
-    <a>Registrace</a>
-    <a>Přihlášení</a>
+  <div style="display:flex; justify-content: space-between;">
+
+    <div style="display:flex; position:relative;">
+      <img class="fade-in logo" style="position: absolute;" src="img/logo.png"/>
+      <img class="fade-in cz" style="top: 5px;left: 150px; position: absolute;" src="img/cz.png"/>
+      <img class="fade-in heartsmall" style="width: 23px; height: 23px; left:180px; top:55px; position:absolute;" src="img/heart_small.png"/>
+      <img class="fade-in heartbig" style="width: 36px; height: 36px; left:220px; position:absolute;" src="img/heart_big.png"/>
+    </div>
+
+    <div>
+      <input placeholder="hledat..."/>
+    </div>
+
+    <div>
+      call
+    </div>
+
+    <div>
+      kosik
+    </div>
+
+    <style>
+      .fade-in.logo{
+        -webkit-animation-delay: 0.1s;
+        -moz-animation-delay: 0.1s;
+        animation-delay: 0.1s;
+      }
+      .fade-in.cz{
+        -webkit-animation-delay: 0.2s;
+        -moz-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+      }
+      .fade-in.heartsmall{
+        -webkit-animation-delay: 0.4s;
+        -moz-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+      }
+      .fade-in.heartbig{
+        -webkit-animation-delay: 0.5s;
+        -moz-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+      }
+      @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+      @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+      @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+      .fade-in {
+        opacity:0;  /* make things invisible upon start */
+        -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+        -moz-animation:fadeIn ease-in 1;
+        animation:fadeIn ease-in 1;
+
+        -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+        -moz-animation-fill-mode:forwards;
+        animation-fill-mode:forwards;
+
+        -webkit-animation-duration:1s;
+        -moz-animation-duration:1s;
+        animation-duration:1s;
+      }
+    </style>
+  </div>
   </div>
 
-  <div>
-    logo
-  </div>
 
-  <div>
-    <input placeholder="hledat..."/>
-  </div>
 
-  <div>
-    call
-  </div>
 
-  <div>
-    kosik
-  </div>
+
+
+
+
+
+
+
+
+
 
 </div>
 <!-- end section -->
 
   <div class="l-content">
 
+    <div style="display:flex">
     <!-- Section [SIDE-MENU] -->
     <div id="navmenu">
     <ul>
@@ -62,43 +128,73 @@
           <li><a href="#">podkategorie</a></li>
         </ul>
       </li>
-      <li><a href="#">Erotické prádlo</a></li>
+      <li class="c-menu_dropdown"><a href="#">Erotické prádlo</a>
         <ul>
             <li><a href="#">podkategorie</a></li>
           </ul>
-      <li><a href="#">Pánské spodní prádlo</a></li>
+      </li>
+      <li class="c-menu_dropdown"><a href="#">Pánské spodní prádlo</a>
         <ul>
-            <li><a href="#">Župany a pyžama</a></li>
-            <ul>
-              <li><a href="#">moderní</a></li>
-              <li><a href="#">stará</a></li>
-            </ul>
+            <li class="c-menu_dropdown"><a href="#">Župany a pyžama</a>
+              <ul>
+                <li><a href="#">moderní</a></li>
+                <li><a href="#">stará</a></li>
+              </ul>
+            </li>
           </ul>
-      <li><a href="#">Prádlo pro děti</a></li>
+      </li>
+      <li class="c-menu_dropdown"><a href="#">Prádlo pro děti</a>
       <ul>
           <li><a href="#">podkategorie</a></li>
         </ul>
+      </li>
+
     </ul>
     </div>
-
-    <style>
-      .c-menu_dropdown ul {
-        display : none;
-      }
-    </style>
-
+    <!-- end section-->
+      <style>
+        li.c-menu_dropdown ul {
+          display : none;
+        }
+        li.c-menu_dropdownlvl2 ul {
+          display : none;
+        }
+      </style>
       <script type="text/javascript">
         $('.c-menu_dropdown').click(function() {
-          $(this).children('ul').toggle();
+          $('.c-menu_dropdown').not(this).find('ul').hide();
+          $(this).find('ul').toggle();
         });
       </script>
 
-    <!-- end section-->
-
     <!-- Section [INDEX-SLIDER] -->
+      <div style="display: flex; flex-direction: column;">
+    <div style="background: red; width: 930px; height: 356px;">
+
+    </div>
+      <div id="expresses" style="display:flex;">
+        <div style="
+        width: 290px;
+        height: 122px;
+        background-color: #c02844;"></div>
+        <div style="
+        width: 290px;
+        height: 122px;
+        background-color: #c02844;"></div>
+        <div style="
+        width: 290px;
+        height: 122px;
+        background-color: #c02844;"></div>
+      </div>
+      <div id="categories" style="display:flex;">
+        <div style="width:290px; height: 72px; background: gray;"></div>
+        <div style="width:290px; height: 72px; background: gray;"></div>
+        <div style="width:290px; height: 72px; background: gray;"></div>
+      </div>
 
     <!-- end section-->
-
+      </div>
+    </div>
     <!-- Section [REFERENCES] -->
 
     <!-- end section-->
