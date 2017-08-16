@@ -1,14 +1,21 @@
 .l-header {
-  background-color: $pj_gray;
+  background-color: $background_gray;
   height: 169px;
   @include flexbox;
-  @include hover-focus{
-    cursor: pointer;
-  }
+
+  //@include hover-focus{
+  //  cursor: pointer;
+  //}
 
   @media #{$max-xs} {
     background-color: red;
   }
 
+  &_menu{
+
+  }
+
 
 }
+
+

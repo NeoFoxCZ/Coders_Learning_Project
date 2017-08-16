@@ -103,8 +103,6 @@ $teal:   #5bc0de !default;
 $pink:   #ff5b77 !default;
 $purple: #613d7c !default;
 
-// projects colors
-$pj_gray: #f3f5f7;
 
 // Create grayscale
 $gray-dark:                 #292b2c !default;
@@ -963,8 +961,22 @@ $pre-color:                   $gray-dark !default;
 $pre-border-color:            #ccc !default;
 $pre-scrollable-max-height:   340px !default;
 
-// Own breakpoints IN PROGRESS
+// Own breakpoints
 
-//like extra xs
+$min-xs-mini: "screen and (min-width: 260px)";
+$max-xs-mini: "screen and (max-width: 260px)";
 $min-xs: "screen and (min-width: 320px)";
 $max-xs: "screen and (max-width: 320px)";
+$min-sm: "screen and (min-width: 540px)";
+$max-sm: "screen and (max-width: 540px)";
+$min-md: "screen and (min-width: 720px)";
+$max-md: "screen and (max-width: 720px)";
+$min-lg: "screen and (min-width: 960px)";
+$max-lg: "screen and (max-width: 960px)";
+$min-xl: "screen and (min-width: 1140px)";
+$max-xl: "screen and (max-width: 1140px)";
+
+// projects colors
+$background_gray: #f3f5f7;
+$text_gray: #666666;
+$text_black: #333333;

@@ -54,9 +54,11 @@
 @import "utilities";
 
 // Addons
+@import "animation";
 @import "modules/header";
 @import "modules/page";
 
+
 //pages
-@import "indexpage";
+@import "page/index";
 
