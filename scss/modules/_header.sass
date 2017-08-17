@@ -1,0 +1,88 @@
+/*
+ l-header, c-header = header of page
+ arrow_down = arrow for select
+ abutton = variable for <a> in menu
+
+.l-header
+  background-color: $background_gray
+  height: 169px
+  @include flexbox
+  @media #{$max-xs}
+    background-color: red
+  &__frame
+    width: 100%
+  &__top
+    padding: 20px 0px 25px
+    margin: 0
+    @include flexbox
+    justify-content: space-between
+  &__bottom
+    @include flexbox
+    justify-content: space-between
+    &--item
+      @include flexbox
+      max-height: 32px
+      align-items: center
+      padding-top: 15px
+      > div
+        @include flexbox
+        flex-direction: column
+        padding: 0 10px
+        > p
+          font-size: 13px
+          color: $text_black
+          font-weight: 400
+          margin: 0
+          &:last-child
+            font-weight: 700
+            font-size: 20px
+  &__logo
+    @include flexbox
+    position: relative
+    min-width: 260px
+    top: -20px
+
+.c-header
+  &__top
+    &--quote
+      min-width: 290px
+      color: $text_gray
+      font-size: 13px
+      font-weight: 400
+    &--menu
+      flex: 1
+      @extend .abutton
+    &--logreg
+      @extend .abutton
+  &__bottom
+    &--search
+      > input
+        padding: 18px 35px 15px 20px
+        color: $text_gray
+        font-weight: 400
+        font-size: 16px
+        width: 460px
+        height: 50px
+      > img
+        position: absolute
+        top: 105px
+        left: 58%
+        &:hover
+          cursor: pointer
+.abutton
+  > a
+    font-size: 13px
+    color: $text_black
+    &:not(:last-child)
+      padding-right: 25px
+    > img
+      margin-right: 12px
+.arrow_down
+  width: 0
+  height: 0
+  border-left: 6px solid transparent
+  border-right: 6px solid transparent
+  border-top: 6px solid $arrow_gray
+  &:hover
+    border-top-color: $text_black
+    cursor: pointer

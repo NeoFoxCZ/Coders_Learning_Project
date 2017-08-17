@@ -6,19 +6,9 @@
     <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
 
   <script language="JavaScript" type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-
-
     <meta charset="UTF-8">
     <title>Prádelko.cz</title>
 
-
- <!-- Nezapomenout promazat
-  <script>
-    $(window).resize(function() {
-
-    });
-  </script>
-  -->
 
 </head>
 
@@ -26,54 +16,51 @@
 
 <!-- Section [HEAD-MENU] -->
 <div class="l-header l-content">
-  <div style="display:flex; flex-direction: column; width: 100%;">
-  <div class="row" style="padding-bottom: 20px; margin: 0; display:flex; flex-direction:row; justify-content: space-between;">
-    <b style="min-width: 290px;">myslíme na vás, kudy chodíme...</b>
-
-    <div class="l-header_menu" style="flex:1;">
-      <a>Home</a>
-      <a>Aktuality</a>
-      <a>Vše o nákupu</a>
-      <a>Doprava</a>
-      <a>Kontakty</a>
+  <div class="l-header__frame">
+  <div class="l-header__top">
+    <p class="c-header__top--quote">myslíme na vás, kudy chodíme...</p>
+    <div class="c-header__top--menu">
+      <a href="#">Home</a>
+      <a href="#">Aktuality</a>
+      <a href="#">Vše o nákupu</a>
+      <a href="#">Doprava</a>
+      <a href="#">Kontakty</a>
     </div>
-
-    <div>
-      <a>Registrace</a>
-      <a>Přihlášení</a>
+    <div class="c-header__top--logreg">
+      <a href="#">Registrace</a>
+      <a href="#">
+      <img src="img/icon_user.png"/>Přihlášení</a>
     </div>
-
   </div>
+  <div class="l-header__bottom">
 
-  <div style=" display:flex; justify-content: space-between;">
-
-    <div style="min-width: 260px;display:flex; position:relative;">
-      <img class="fade-in logo" style="position: absolute; top: 5px;" src="img/logo.png"/>
-      <img class="fade-in cz" style="top: 10px;left: 150px; position: absolute;" src="img/cz.png"/>
-      <img class="fade-in heartsmall" style="width: 23px; height: 23px; left:180px; top:55px; position:absolute;" src="img/heart_small.png"/>
-      <img class="fade-in heartbig" style="width: 36px; height: 36px; left:220px; position:absolute;" src="img/heart_big.png"/>
+    <div class="l-header__logo">
+      <a href="#">
+        <img class="fade-in logo" style="position: absolute; top: 5px;" src="img/logo.png"/>
+        <img class="fade-in cz" style="top: 10px;left: 150px; position: absolute;" src="img/cz.png"/>
+        <img class="fade-in heartsmall" style="width: 23px; height: 23px; left:180px; top:55px; position:absolute;" src="img/heart_small.png"/>
+        <img class="fade-in heartbig" style="width: 36px; height: 36px; left:220px; position:absolute;" src="img/heart_big.png"/>
+      </a>
     </div>
 
-      <div>
-        <input style="width: 460px; height: 49px;" placeholder="Hledaný výraz:"/> <img style="position: absolute; top: 60px; left:58%;" src="img/icon_lupa.png"/>
+      <div class="c-header__bottom--search">
+        <input placeholder="Hledaný výraz:"/> <img src="img/icon_lupa.png"/>
       </div>
-      <div style="display: flex;">
+      <div class="l-header__bottom--item">
         <img src="img/icon_phone.png"/>
-        <div style="display:flex; flex-direction: column;">
-          <b>volejte od 9-18 hod</b>
-          <b>585 157 488</b>
-        </div>
-        <img src="img/icon_arrow.png"/>
+          <div>
+            <p>volejte od 9-18 hod</p>
+            <p>585 157 488</p>
+          </div>
+        <span class="arrow_down"/>
       </div>
-
-      <div style="display:flex;">
+      <div class="l-header__bottom--item">
         <img src="img/icon_cart.png"/>
-
-        <div style="display:flex; flex-direction: column;">
-          <b>Košík</b>
-          <b>15 999 KČ</b>
-        </div>
-        <img src="img/icon_arrow.png"/>
+          <div>
+            <p>Košík</p>
+            <p>15 999 Kč</p>
+          </div>
+        <span class="arrow_down"/>
       </div>
     </div>
 
@@ -138,20 +125,28 @@
     <div style="background: red; width: auto; height: 356px;">
 
     </div>
-      <div id="expresses" style="display:flex;">
-        <div style="
-        width: 290px;
-        height: 122px;
-        background-color: #c02844;"></div>
-        <div style="
-        width: 290px;
-        height: 122px;
-        background-color: #c02844;"></div>
-        <div style="
-        width: 290px;
-        height: 122px;
-        background-color: #c02844;"></div>
+
+      <div class="l-expresion__frame">
+        <div class="c-expresion__item">
+          <p>image</p>
+          <p>image2</p>
+          Garance
+          na výměnu zboží
+        </div>
+        <div class="c-expresion__item">
+          <p>image</p>
+          <p>image2</p>
+          Garance
+          na výměnu zboží
+        </div>
+        <div class="c-expresion__item">
+          <p>image</p>
+          <p>image2</p>
+          Garance
+          na výměnu zboží
+        </div>
       </div>
+
       <div id="categories" style="display:flex;">
         <div style="width:290px; height: 72px; background: gray;"></div>
         <div style="width:290px; height: 72px; background: gray;"></div>

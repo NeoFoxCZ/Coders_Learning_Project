@@ -9381,13 +9381,10 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 .fade-in {
   opacity: 0;
-  /* make things invisible upon start */
   -webkit-animation: fadeIn ease-in 1;
-  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
   -o-animation: fadeIn ease-in 1;
      animation: fadeIn ease-in 1;
   -webkit-animation-fill-mode: forwards;
-  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
   -o-animation-fill-mode: forwards;
      animation-fill-mode: forwards;
   -webkit-animation-duration: 1s;
@@ -9395,6 +9392,10 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
      animation-duration: 1s;
 }
 
+/*
+ l-header, c-header = header of page
+ arrow_down = arrow for select
+ abutton = variable for <a> in menu */
 .l-header {
   background-color: #f3f5f7;
   height: 169px;
@@ -9410,6 +9411,141 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   }
 }
 
+.l-header__frame {
+  width: 100%;
+}
+
+.l-header__top {
+  padding: 20px 0px 25px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.l-header__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.l-header__bottom--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  max-height: 32px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 15px;
+}
+
+.l-header__bottom--item > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 10px;
+}
+
+.l-header__bottom--item > div > p {
+  font-size: 13px;
+  color: #333333;
+  font-weight: 400;
+  margin: 0;
+}
+
+.l-header__bottom--item > div > p:last-child {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.l-header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  position: relative;
+  min-width: 260px;
+  top: -20px;
+}
+
+.c-header__top--quote {
+  min-width: 290px;
+  color: #666666;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.c-header__top--menu {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 0%;
+      -ms-flex: 1 1 0%;
+          flex: 1 1 0%;
+}
+
+.c-header__bottom--search > input {
+  padding: 18px 35px 15px 20px;
+  color: #666666;
+  font-weight: 400;
+  font-size: 16px;
+  width: 460px;
+  height: 50px;
+}
+
+.c-header__bottom--search > img {
+  position: absolute;
+  top: 105px;
+  left: 58%;
+}
+
+.c-header__bottom--search > img:hover {
+  cursor: pointer;
+}
+
+.abutton > a, .c-header__top--menu > a, .c-header__top--logreg > a {
+  font-size: 13px;
+  color: #333333;
+}
+
+.abutton > a:not(:last-child), .c-header__top--menu > a:not(:last-child), .c-header__top--logreg > a:not(:last-child) {
+  padding-right: 25px;
+}
+
+.abutton > a > img, .c-header__top--menu > a > img, .c-header__top--logreg > a > img {
+  margin-right: 12px;
+}
+
+.arrow_down {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #989898;
+}
+
+.arrow_down:hover {
+  border-top-color: #333333;
+  cursor: pointer;
+}
+
 .l-content {
   padding: 0 385px;
 }
@@ -9422,5 +9558,29 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 .index {
   background-color: red;
+}
+
+.l-expresion__frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.l-expresion__frame > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.c-expresion__item {
+  width: 290px;
+  height: 122px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
